@@ -1,0 +1,141 @@
+﻿/* Jesse M. Heines, UMass Lowell Computer Science, heines@cs.uml.edu
+*  Copyright (c) 2014 by Jesse M. Heines.  All rights reserved.  May be freely
+*  copied or excerpted for educational purposes with credit to the author.
+*  updated by JMH on November 30, 2014 at 9:03 AM
+*
+*  Andrew DiBiasio andrew_dibiasio@student.uml.edu 
+*  I am a Computer Science Major at the University of Massachusetts Lowell and I adapted this file as part of an
+*  assignment for my course 91.461 GUI Programming I. It styles the rest of my pages.
+*  Adapted: December 10th, 2014 
+*/
+
+hr.style_hr {
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #ca1414;
+  text-align: center;
+}
+
+html, body {
+  width: 100%;
+  background: #e7e7e7;
+}
+/* set font family and font size for entire page */
+body, table {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14pt;
+  margin: 0 auto;
+}
+
+/* set style for universal a and a:hover */
+a {
+  text-decoration: none;
+}
+
+  a:hover {
+    color: #afc11f;
+    background: #bc137c;
+  }
+/* centering content of the page */
+#content {
+  margin: 0 auto;
+  width: 100%;
+}
+/* eliminate the space above the main page title and between that title
+and the version information that immediately follows it on the next line */
+#maintitle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+  #maintitle + p {
+    margin-top: 0;
+  }
+
+/*The following code for the style of search box is*/
+/*from Author: Bunchhieng Soth, bsoth@cs.uml.edu*/
+/*http://programmath.net/angular/css/style.css*/
+#search {
+  font-size: 20px;
+  color: black;
+  width: 350px;
+  min-height: 50px;
+  outline: none;
+  background-color: #fafafa;
+  background-position: right;
+  border: 1px solid #ccc;
+  margin-right: 685px;
+  margin-left: auto;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+/* collapse the table borders to achieve the desired effect*/
+#peopleInfo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 20px;
+  background: #eaebec;
+  border: #ccc 1px solid;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+  /* add borders and padding to the table head and body cells */
+  #peopleInfo th, #peopleInfo td {
+    border: 2px solid #ca1414;
+    padding: 2px 5px;
+  }
+
+  /* reverse video header row */
+  #peopleInfo thead tr th {
+    color: #71c2eb;
+    background-color: #0f0f0f;
+  }
+
+    /* add white right borders to adjacent black header row cells */
+    #peopleInfo thead tr th:nth-child( 5 ) {
+      border-right: 1px solid white;
+    }
+
+
+    /* indicate that certain columns are clickable */
+    #peopleInfo thead tr th:nth-child(2),
+    #peopleInfo thead tr th:nth-child(3),
+    #peopleInfo thead tr th:nth-child(4),
+    #peopleInfo thead tr th:nth-child(5),
+    #peopleInfo thead tr th:nth-child(6),
+    #peopleInfo thead tr th:nth-child(7) {
+      color: black;
+      background-color: lightblue;
+    }
+
+      /* handle rollovers on clickable columns */
+      #peopleInfo thead tr th:nth-child(2):hover,
+      #peopleInfo thead tr th:nth-child(3):hover,
+      #peopleInfo thead tr th:nth-child(4):hover,
+      #peopleInfo thead tr th:nth-child(5):hover,
+      #peopleInfo thead tr th:nth-child(6):hover,
+      #peopleInfo thead tr th:nth-child(7):hover {
+        cursor: pointer;
+        color: red;
+        background-color: #281a93;
+      }
+
+/* align all table body cells to the top of their cells*/
+#DataInfo tbody tr td {
+  vertical-align: top;
+}
+
+  /* center the cells in the 1st and 4th columns of the table */
+  #DataInfo tbody tr td:nth-child(1),
+  #DataInfo tbody tr td:nth-child(5) {
+    text-align: center;
+  }
+
+  /* set no break in date string column */
+  #DataInfo tbody tr td:nth-child(4) {
+    white-space: nowrap;
+  }
