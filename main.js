@@ -11,7 +11,7 @@ Original Author: Jesse M. Heines, UMass Lowell Computer Science, heines@cs.uml.e
 
 "use strict"; // to ensure that all variables are declared before use
 
-// the number of the last column sorted, initialized to the Student Name column
+// the number of the last column sorted, initialized to the Account Holder column
 var lastSortColumnNo = 2;
 // a flag indicating whether the last sort was ascending (true) or descending (false)
 var lastSortDescending = false;
