@@ -9,54 +9,29 @@
 *  Adapted: December 10th, 2014 
 */
 
-hr.style_hr {
-  padding: 0;
-  border: none;
-  border-top: medium double #333;
-  color: #ca1414;
-  text-align: center;
+body {
+  width: 100%;
+  background: #ccc;
 }
 
-html, body {
-  width: 100%;
-  background: #e7e7e7;
-}
 /* set font family and font size for entire page */
 body, table {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   font-size: 14pt;
   margin: 0 auto;
 }
 
-/* set style for universal a and a:hover */
-a {
-  text-decoration: none;
+#mainHeader {
+  font-size: 40px;
 }
 
-  a:hover {
-    color: #afc11f;
-    background: #bc137c;
-  }
 /* centering content of the page */
 #content {
   margin: 0 auto;
   width: 100%;
 }
-/* eliminate the space above the main page title and between that title
-and the version information that immediately follows it on the next line */
-#maintitle {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 
-  #maintitle + p {
-    margin-top: 0;
-  }
-
-/*The following code for the style of search box is*/
-/*from Author: Bunchhieng Soth, bsoth@cs.uml.edu*/
-/*http://programmath.net/angular/css/style.css*/
 #search {
   font-size: 20px;
   color: black;
@@ -64,14 +39,12 @@ and the version information that immediately follows it on the next line */
   min-height: 50px;
   outline: none;
   background-color: #fafafa;
-  background-position: right;
-  border: 1px solid #ccc;
   margin-right: 685px;
   margin-left: auto;
 }
 
 /* collapse the table borders to achieve the desired effect*/
-#peopleInfo {
+#bankInfo {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   font-size: 20px;
@@ -82,41 +55,41 @@ and the version information that immediately follows it on the next line */
 }
 
   /* add borders and padding to the table head and body cells */
-  #peopleInfo th, #peopleInfo td {
+  #bankInfo th, #bankInfo td {
     border: 2px solid #ca1414;
     padding: 2px 5px;
   }
 
   /* reverse video header row */
-  #peopleInfo thead tr th {
+  #bankInfo thead tr th {
     color: #71c2eb;
     background-color: #0f0f0f;
   }
 
     /* add white right borders to adjacent black header row cells */
-    #peopleInfo thead tr th:nth-child( 5 ) {
+    #bankInfo thead tr th:nth-child( 5 ) {
       border-right: 1px solid white;
     }
 
 
     /* indicate that certain columns are clickable */
-    #peopleInfo thead tr th:nth-child(2),
-    #peopleInfo thead tr th:nth-child(3),
-    #peopleInfo thead tr th:nth-child(4),
-    #peopleInfo thead tr th:nth-child(5),
-    #peopleInfo thead tr th:nth-child(6),
-    #peopleInfo thead tr th:nth-child(7) {
+    #bankInfo thead tr th:nth-child(2),
+    #bankInfo thead tr th:nth-child(3),
+    #bankInfo thead tr th:nth-child(4),
+    #bankInfo thead tr th:nth-child(5),
+    #bankInfo thead tr th:nth-child(6),
+    #bankInfo thead tr th:nth-child(7) {
       color: black;
       background-color: #71c2eb;
     }
 
       /* handle rollovers on clickable columns */
-      #peopleInfo thead tr th:nth-child(2):hover,
-      #peopleInfo thead tr th:nth-child(3):hover,
-      #peopleInfo thead tr th:nth-child(4):hover,
-      #peopleInfo thead tr th:nth-child(5):hover,
-      #peopleInfo thead tr th:nth-child(6):hover,
-      #peopleInfo thead tr th:nth-child(7):hover {
+      #bankInfo thead tr th:nth-child(2):hover,
+      #bankInfo thead tr th:nth-child(3):hover,
+      #bankInfo thead tr th:nth-child(4):hover,
+      #bankInfo thead tr th:nth-child(5):hover,
+      #bankInfo thead tr th:nth-child(6):hover,
+      #bankInfo thead tr th:nth-child(7):hover {
         cursor: pointer;
         color: red;
         background-color: #281a93;
